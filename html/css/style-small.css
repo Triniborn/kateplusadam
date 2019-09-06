@@ -41,16 +41,10 @@
 			margin: -0.5em 0 2em 0;
 		}
 
-/* Wrapper */
-
-	.wrapper {
-		padding: 3em 0 1em 0;
-	}
-
 /* Banner */
 
 	#banner {
-		padding: 5em 2em 4em 2em;
+		padding: 50em 2em 4em 2em;
 	}
 
 		#banner h2 {

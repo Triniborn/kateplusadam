@@ -849,9 +849,9 @@
             background-attachment: fixed;
             background-image: url("../images/home-wrapper.jpg");
             background-size: cover;
-		    background-position: center -350px;
+		    background-position: center center;
 		    background-repeat: no-repeat;
-            padding: 10em;
+            padding: 16em;
 		}
 
 			.wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
@@ -911,7 +911,7 @@
 			margin: 0;
 			padding: 0;
 			position: absolute;
-            top: 1.1em;
+            top: 0.75em;
         }
 
 			#header h1 a {
@@ -997,8 +997,8 @@
 	}
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
+@media only screen and (max-device-width: 640px) {
+  #banner {
     background-attachment: scroll;
   }
 }
