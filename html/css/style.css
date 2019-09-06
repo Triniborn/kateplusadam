@@ -851,6 +851,7 @@
             background-size: cover;
 		    background-position: center center;
 		    background-repeat: no-repeat;
+            overflow: hidden;
             padding: 16em;
 		}
 
@@ -993,6 +994,7 @@
 		background-repeat: no-repeat;
 		padding: 28em;
 		text-align: center;
+        overflow: hidden;
 		position: relative;
 	}
 
