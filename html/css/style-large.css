@@ -10,16 +10,10 @@
 		font-size: 11pt;
 	}
 
-/* Wrapper */
-
-	.wrapper {
-		padding: 10em;
-	}
-
 /* Banner */
 
 	#banner {
-		padding: 28em 0;
+		padding: 8em 0;
 	}
 
 		#banner h2 {
