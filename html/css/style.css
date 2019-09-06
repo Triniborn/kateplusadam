@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto:500,300");
-@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i");
 /*
 	Ion by TEMPLATED
 	templated.co @templatedco
@@ -32,7 +32,6 @@
 		}
 
 	strong, b {
-		color: #666f77;
 		font-weight: 500;
 	}
 
@@ -907,7 +906,7 @@
 			margin: 0;
 			padding: 0;
 			position: absolute;
-            top: .75em;
+            top: 1.1em;
         }
 
 			#header h1 a {
@@ -988,7 +987,7 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 		color: #d8d8d8;
-		padding: 26em 0;
+		padding: 28em;
 		text-align: center;
 		position: relative;
 	}
@@ -1000,7 +999,7 @@
 			top: 0;
 			width: 100%;
 			height: 100%;
-			background: rgba(64, 72, 80, 0.25);
+			background: rgba(64, 72, 80, 0.1);
 		}
 
 		#banner .inner {
@@ -1038,19 +1037,21 @@
 		}
 
 		#banner h2 {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 300;
-			font-size: 4em;
+            font-family: 'Great Vibes', cursive;
+			font-size: 5em;
+            letter-spacing: 20px;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
-			padding: 0;
+			padding: 0em;
             text-transform: capitalize
 		}
 
 		#banner p {
-			font-size: 1.5em;
-			margin-bottom: 2em;
-		}
+            color: #ffffff;
+			font-size: 1em;
+            letter-spacing: 2px;
+            margin-bottom: 2em;
+  		}
 
 			#banner p a {
 				color: #ffffff;
