@@ -507,6 +507,7 @@
 		}
 
 		ul.alt {
+            font-size: 1em;
 			list-style: none;
 			padding-left: 0;
 		}
@@ -845,8 +846,12 @@
 		}
 
 		.wrapper.style2 {
-			background: #192024;
-			color: #c5c7c8;
+            background-attachment: fixed;
+            background-image: url("../images/wrapper1.jpg");
+            background-size: cover;
+		    background-position: center -350px;
+		    background-repeat: no-repeat;
+            padding: 15em;
 		}
 
 			.wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
@@ -979,9 +984,10 @@
 			}
 
 /* Banner */
-
-	#banner {
-		background-color: #666666;
+  
+    #banner .parallax {
+		background-attachment: fixed;
+        background-color: #666666;
 		background-image: url("../images/banner.jpg");
 		background-size: cover;
 		background-position: center center;
@@ -991,6 +997,13 @@
 		text-align: center;
 		position: relative;
 	}
+    
+    /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+    @media only screen and (max-device-width: 1366px) {
+        #banner.parallax {
+            background-attachment: scroll;
+        }
+    }
 
 		#banner:before {
 			content: '';
@@ -1001,15 +1014,6 @@
 			height: 100%;
 			background: rgba(64, 72, 80, 0.1);
 		}
-
-		#banner .inner {
-			position: relative;
-			z-index: 1;
-		}
-
-			#banner .inner :last-child {
-				margin-bottom: 0;
-			}
 
 		#banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
 			color: #ffffff;
