@@ -985,7 +985,7 @@
 
 /* Banner */
   
-    #banner .parallax {
+    #banner {
 		background-attachment: fixed;
         background-color: #666666;
 		background-image: url("../images/banner.jpg");
@@ -998,14 +998,7 @@
 		position: relative;
 	}
     
-    /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-    @media only screen and (max-device-width: 1366px) {
-        #banner.parallax {
-            background-attachment: scroll;
-        }
-    }
-
-		#banner:before {
+   	#banner:before {
 			content: '';
 			position: absolute;
 			left: 0;
@@ -1014,6 +1007,15 @@
 			height: 100%;
 			background: rgba(64, 72, 80, 0.1);
 		}
+
+        #banner .inner {
+			position: relative;
+			z-index: 1;
+		}
+
+			#banner .inner :last-child {
+				margin-bottom: 0;
+			}
 
 		#banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
 			color: #ffffff;
