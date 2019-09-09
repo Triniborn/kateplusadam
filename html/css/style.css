@@ -11,7 +11,8 @@
 /* Basic */
 
 	body {
-		background: #fff; 
+		background: #fff;
+        touch-action
 	}
 
 	body, input, select, textarea {
@@ -1080,6 +1081,10 @@
 		padding: 4em 0 6em 0;
 	}
 
+        .whiteout {
+          background: white;
+        }
+
 		#footer a {
 			color: inherit;
 		}
@@ -1113,7 +1118,3 @@
 		#footer .icons a {
 			color: #bbb;
 		}
-
-        .whiteout {
-          background: white;
-        }
