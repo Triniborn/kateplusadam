@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kate &amp; Adam</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="index.html"><img src="favicon/logo.svg" alt="logo"></a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="events.html">EVENTS</a></li>
+						<li><a href="travel.html">TRAVEL</a></li>
+						<li><a href="lodging.html">LODGING</a></li>
+						<li><a href="activities.html">ACTIVITIES</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="faq.html">REGISTRY</a></li>
+                        <li><a href="faq.html">RSVP</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+              
+				<div class="inner">
+				  <h2>Kate &amp; Adam</h2>
+                  <p><strong>FRIDAY, AUGUST 7, 2020</strong><br>
+                      ROCHE HARBOR, SAN JUAN ISLAND, WASHINGTON</p>
+                  <p id="countdown"></p>
+
+                  <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("Aug 7, 2020").getTime();
+
+                    // Update the count down every 1 second
+                    var x = setInterval(function() {
+
+                    // Get today's date and time
+                    var now = new Date().getTime();
+
+                    // Find the distance between now and the count down date
+                    var distance = countDownDate - now;
+
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    // Output the result in an element with id="demo"
+                    document.getElementById("countdown").innerHTML = days + "D " + hours + "H "
+                    + minutes + "M " + seconds + "S ";
+
+                    // If the count down is over, write some text 
+                    if (distance < 0) {
+                      clearInterval(x);
+                      document.getElementById("countdown").innerHTML = "EXPIRED";
+                    }
+                  }, 1000);
+                  </script>
+
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper style1">
+				<header class="major">
+					<h2>We Are Getting Married!</h2>
+					<p>Welcome to our wedding website.</p>
+				</header>
+				<div class="container">
+					<div class="row">
+						<div class="4u">
+							<section class="special box">
+								<p>image holder</p>
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special box">
+								<p>image holder</p>
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special box">
+								<p>image holder</p>
+							</section>
+						</div>
+					</div>
+                  <p>Hello</p>
+                  <p>Hello</p>
+                  <p>Hello</p>
+                  <p>Hello</p>
+                  <p>Hello</p>
+                  <p>Hello</p>
+                  <p>Hello</p>
+                  <p>Hello</p>
+
+				</div>
+			</section>
+			
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+            </section>
+      
+		<!-- Footer-->
+			<footer id="footer" class="whiteout">
+				<div class="container">
+					<div class="row double">
+						<div class="6u">
+							<div class="row collapse-at-2">
+								<div class="6u">
+									<h2>Questions?</h2>
+                                    <p>We understand that t</p>
+          							<ul class="alt">
+										<li><a href="mailto:katecb@gmail.com">Contact us via E-mail</a></li>
+									</ul>
+								</div>
+						    </div>
+						</div>
+						<div class="6u">
+							<h2>Thank You</h2>
+							<p>Blandit nunc tempor lobortis nunc non. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id. Arcu accumsan faucibus vis ultricies adipiscing ornare ut. Mi accumsan justo aliquet.</p>
+						</div>
+					</div>
+                    <ul class="copyright">
+						<li><a href="index.html"><img src="favicon/logo.svg" alt="logo"></a></li>
+				    </ul>
+				</div>
+			</footer>
+
+	</body>
+</html>
