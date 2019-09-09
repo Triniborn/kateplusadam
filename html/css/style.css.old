@@ -847,15 +847,11 @@
 
 		.wrapper.style2 {
             background-attachment: fixed;
-		    background-image: url("../images/home-wrapper.jpg");
-		    background-size: cover;
+            background-image: url("../images/home-wrapper.jpg");
+            background-size: cover;
 		    background-position: center center;
 		    background-repeat: no-repeat;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            position: relative;
-
+            height: 50vh;
 		}
 
 			.wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
@@ -995,28 +991,25 @@
 		background-size: cover;
 		background-position: center center;
 		background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+        height: 100vh;
 		padding: 14em 0;
 		position: relative;
         text-align: center;
 	}
 
    	#banner:before {
-		    background: rgba(64, 72, 80, 0.1);
-            content: '';
-            display: block;
-			position: fixed;
+			content: '';
+			position: absolute;
 			left: 0;
 			top: 0;
 			width: 100%;
 			height: 100%;
-            
+			background: rgba(64, 72, 80, 0.1);
 		}
 
         #banner .inner {
 			position: relative;
+            top: 30%;
 			z-index: 1;
 		}
 
@@ -1055,7 +1048,7 @@
             letter-spacing: 20px;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
-			padding-top: 1em;
+			padding: 0em;
             text-transform: capitalize
 		}
 
