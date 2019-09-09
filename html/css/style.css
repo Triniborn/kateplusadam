@@ -12,7 +12,8 @@
 
 	body {
 		background: #fff;
-        overscroll-behavior: none;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
 	}
 
 	body, input, select, textarea {
