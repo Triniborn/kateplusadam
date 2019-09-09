@@ -10,9 +10,8 @@
 
 /* Basic */
 
-	body {
+    body {
 		background: #fff;
-        touch-action
 	}
 
 	body, input, select, textarea {
@@ -990,10 +989,9 @@
 /* Banner */
 
 #banner {
-        background: rgba(64, 72, 80, 0.05);
+        background: rgba(64, 72, 80, .05);
 		padding: 14em 0;
         text-align: center;
-        
 	}
 
    	#banner:before {
