@@ -990,7 +990,7 @@
 
 #banner {
         background: rgba(64, 72, 80, .05);
-		padding: 14em 0;
+		padding: 12em 0;
         text-align: center;
 	}
 
@@ -1014,7 +1014,7 @@
 		}
 
         #banner .inner {
-            padding: 14em 1em 14em 1em;
+            padding: 12em 1em 12em 1em;
 			position: relative;
 			z-index: 1;
 		}
