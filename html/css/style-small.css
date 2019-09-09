@@ -50,7 +50,7 @@
 /* Banner */
 
 	#banner {
-		padding: 5em 1em 4em 1em;
+		padding: 5em .5em 4em .5em;
 	}
 
 		#banner h2 {

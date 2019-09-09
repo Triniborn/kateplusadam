@@ -11,9 +11,7 @@
 /* Basic */
 
 	body {
-		background: #fff;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
+		background: #fff; 
 	}
 
 	body, input, select, textarea {
