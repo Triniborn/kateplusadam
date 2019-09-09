@@ -12,6 +12,7 @@
 
 	body {
 		background: #fff;
+        overscroll-behavior: none;
 	}
 
 	body, input, select, textarea {
