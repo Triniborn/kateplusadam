@@ -845,15 +845,15 @@
 			color: #555f66;
 		}
 
+        .wrapper.style1 h3 {
+            color: #a3a5a7;
+
+        }
+
         .wrapper.style1 p {
             text-align: justify;
 		}
 
-        .wrapper.style1 p2 {
-            text-align: center;
-		}
-    
-    
 		.wrapper.style2 {
 		    background-image: url(../images/home-wrapper.jpg);
             background-size: cover;
