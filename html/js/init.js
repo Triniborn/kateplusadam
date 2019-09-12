@@ -1,10 +1,4 @@
-/*
-	Ion by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
-(function($) {
+(function ($) {
 
 	skel.init({
 		reset: 'full',
@@ -96,7 +90,7 @@
 						orientation: 'vertical',
 						position: 'top-left',
 						side: 'left',
-						width: 250
+						width: '100%'
 					},
 
 				// Navigation Button.
