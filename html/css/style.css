@@ -853,12 +853,12 @@
             
 		}
 
-        .center {
+        .wrapper-center-image {
             display: block;
             margin-left: auto;
             margin-right: auto;
             padding-bottom: 2em;
-            width: 50%;
+            width: 70%;
             
 		}
 
