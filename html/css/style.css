@@ -1040,6 +1040,24 @@
             z-index: -10;    
 		}
 
+    .home:after {
+            background-image: url("../images/home-banner.jpg");
+		    background-size: cover;
+		    background-position: center center;
+		    background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            content: '';
+            display: block;
+  			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+            z-index: -10;    
+		}
+
 .travel {
           padding: 14em 0;
           text-align: center;

@@ -1,7 +1,7 @@
 (function ($) {
 
 	skel.init({
-		reset: 'full',
+		reset: 'normalize',
 		breakpoints: {
 			
 			// Global.
@@ -84,7 +84,7 @@
 						animation: 'pushX',
 						breakpoints: 'medium',
 						clickToHide: true,
-						height: '100%',
+						height: 'auto',
 						hidden: true,
 						html: '<div data-action="moveElement" data-args="nav"></div>',
 						orientation: 'vertical',
