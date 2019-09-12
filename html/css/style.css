@@ -1095,7 +1095,7 @@
             letter-spacing: 10px;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
-			padding-top: 1em;
+			padding: 1em 0em 0.5em 0em;
             text-transform: capitalize;
 		}
 
@@ -1105,7 +1105,7 @@
             letter-spacing: 10px;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
-			padding: 1em;
+			padding: 1.5em;
             text-transform: capitalize;
 		}
 
