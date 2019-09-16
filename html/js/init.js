@@ -10,10 +10,7 @@
 					href: 'css/style.css',
 					containers: 1400,
 					grid: {
-						gutters: {
-							vertical: '4em',
-							horizontal: 0
-						}
+						
 					}
 				},
 
@@ -30,9 +27,7 @@
 					href: 'css/style-large.css',
 					containers: 960,
 					grid: {
-						gutters: {
-							vertical: '2.5em'
-						}
+
 					},
 					viewport: {
 						scalable: false
@@ -55,9 +50,7 @@
 					href: 'css/style-small.css',
 					containers: '90%',
 					grid: {
-						gutters: {
-							vertical: '1.25em'
-						}
+
 					}
 				},
 
