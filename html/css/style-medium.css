@@ -32,6 +32,10 @@
 			min-width: 0;
 		}
 
+		#banner .inner {
+			padding-top: 5em;
+		}
+
 /* Layers */
 
 	#navButton .toggle {
