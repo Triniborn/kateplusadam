@@ -220,7 +220,7 @@
       position: absolute;
       top: 32px;
       left: 50%;
-      margin-left: -10.5px;
+      margin-left: -0.7em;
       background-color: #666f77;
       z-index: 100;
       border-top-right-radius: 50%;
@@ -1011,6 +1011,19 @@
 			position: relative;
 		}
 
+		.wrapper.style3 {
+		    background-image: url(../images/schedule-wrapper.jpg);
+            background-size: cover;
+		    background-position: center center;
+		    background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            height: 480px;
+			position: relative;
+		}
+
+
         .wrapper.style4 {
 		    background-image: url(../images/travel-wrapper.jpg);
             background-size: cover;
@@ -1309,6 +1322,30 @@
             
 		}
 
+.schedule {
+          padding: 14em 0;
+          text-align: center;
+	}
+
+   	.schedule:before {
+            background-image: url("../images/schedule-banner.jpg");
+		    background-size: cover;
+		    background-position: center center;
+		    background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            content: '';
+            display: block;
+  			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+            z-index: -10;
+            
+		}
+
         #banner .inner {
             padding: 14em 1em 14em 1em;
 			position: relative;
@@ -1346,7 +1383,7 @@
 
 		#banner h2 {
             font-family: 'Playfair Display', serif;
-			font-size: 4em;
+			font-size: 3em;
             letter-spacing: 0px;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
