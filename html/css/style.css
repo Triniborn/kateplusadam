@@ -305,20 +305,24 @@
 /* Form */
 
 	form {
-		margin: 0 0 2em 0;
+		margin-left: 25%;
 	}
 
 	label {
 		color: #666f77;
 		display: block;
-		font-size: 0.9em;
-		font-weight: 500;
-		margin: 0 0 1em 0;
+		font-size: 0.75em;
+		margin: 2em 0 .5em 0;
+        font-weight: 300;
+		line-height: 1em;
+		text-transform: uppercase;
+		letter-spacing: 0.125em;
 	}
 
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+    input[type="number"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -341,6 +345,7 @@
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
+        input[type="number"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -349,6 +354,7 @@
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+        input[type="number"]:focus,
 		select:focus,
 		textarea:focus {
 			border-color: #629DD1;
@@ -372,7 +378,7 @@
 		}
 
 		.select-wrapper:before {
-			color: rgba(144, 144, 144, 0.25);
+			color: rgba(144, 144, 144, 0.5);
 			display: block;
 			height: 2.75em;
 			line-height: 2.75em;
@@ -391,6 +397,7 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+    input[type="number"],
 	select {
 		height: 2.75em;
 	}
