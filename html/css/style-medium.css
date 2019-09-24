@@ -6,6 +6,12 @@
 		font-size: 12pt;
 	}
 
+/* Form */
+
+	form {
+		margin-left: 0%;
+	}
+
 /* Wrapper */
 
 	.wrapper {

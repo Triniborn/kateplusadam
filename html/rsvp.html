@@ -16,6 +16,79 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/skel-layers/1.0.4/skel-layers.min.js"></script>
         <script src="https://kit.fontawesome.com/32f46b333e.js"></script>
         <script src="js/init.js"></script>
+        <script type="text/javascript">
+          function submitToAPI(e) {
+               e.preventDefault();
+               var URL = "https://ggo1ov6318.execute-api.us-east-1.amazonaws.com/prod/contact";
+
+                    var firstnamere = /[A-Za-z]{1}[A-Za-z]/;
+                    if (!firstnamere.test($("#firstname").val())) {
+                                 alert ("Name can not less than 2 char");
+                        return;
+                    }
+                    var lastnamere = /[A-Za-z]{1}[A-Za-z]/;
+                    if (!lastnamere.test($("#lastname").val())) {
+                                 alert ("Name can not less than 2 char");
+                        return;
+                    }
+                    var phonere = /[0-9]{10}/;
+                    if (!phonere.test($("#phone").val())) {
+                        alert ("Please enter valid mobile number");
+                        return;
+                    }
+                    if ($("#email").val()=="") {
+                        alert ("Please enter your email id");
+                        return;
+                    }
+
+                    var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+                    if (!reeamil.test($("#email").val())) {
+                        alert ("Please enter valid email address");
+                        return;
+                    }
+
+               var firstname = $("#firstname").val();
+               var lastname = $("#lastname").val();  
+               var phone = $("#phone").val();
+               var email = $("#email").val();
+               var welcome = $("#welcome").val();
+               var ceremony = $("#ceremony").val();
+               var entree = $("#entree").val();
+               var guests = $("#guests").val();
+               var dietary = $("#dietary").val();
+               var data = {
+                  firstname : firstname,
+                  lastname : lastname,
+                  phone : phone,
+                  email : email,
+                  welcome : welcome,
+                  ceremony : ceremony,
+                  entree : entree,
+                  guests : guests,
+                  dietary : dietary
+                };
+
+               $.ajax({
+                 type: "POST",
+                 url : "https://ggo1ov6318.execute-api.us-east-1.amazonaws.com/prod/contact",
+                 dataType: "json",
+                 crossDomain: "true",
+                 contentType: "application/json; charset=utf-8",
+                 data: JSON.stringify(data),
+
+
+                 success: function () {
+                   // clear form and show a success message
+                   alert("Successfull");
+                   document.getElementById("form").reset();
+               location.reload();
+                 },
+                 error: function () {
+                   // show an error message
+                   alert("UnSuccessfull");
+                 }});
+             }
+        </script>
 		<noscript>
             <link rel="stylesheet" href="css/style.css" />
         </noscript>
@@ -54,34 +127,32 @@
                 	</header>
                     <p style="text-align: center">Your reply is requested by <strong>June 1</strong>, but the earlier, the better!</p>
                 	<div class="container">
-                    	<form id="form">
+                    	<form id="form" method="post">
                           <div class="row">
                             <div class="4u">
                               <label>First Name</label>
-                              <input type="text" placeholder="First Name">
+                              <input id="firstname" type="text" placeholder="First Name">
                             </div>
                             <div class="4u">
                               <label>Last Name</label>
-                              <input type="text" placeholder="Last Name">
+                              <input id="lastname" type="text" placeholder="Last Name">
                             </div>
                           </div>
                           <div class="row">
-                            <div class="8u">
+                            <div class="5u">
                               <label>E-Mail Address</label>
-                              <input type="email" placeholder="username@domain.com">
+                              <input id="email" type="email" placeholder="username@domain.com">
                             </div>
-                          </div>
-                          <div class="row" >
-                            <div class="4u">
+                            <div class="3u">
                               <label>Phone Number</label>
-                              <input type="number" placeholder="###-###-####">
+                              <input id="phone" type="number" placeholder="555555555">
                             </div>
                           </div>
                           <div class="row" >
                             <div class="8u">
-                              <label>Will you be attending the welcome party on Thursday, August 6?</label>
+                              <label>Will you be attending the welcome event on Thursday, August 6?</label>
                               <div class="select-wrapper">
-                                <select name="welcome-party"   required>
+                                <select id="welcome" name="welcome"   required>
                                   <option value="" disabled selected>Please select your option.</option>
                                   <option value="Yes - can't wait!">Yes - can't wait!</option>
                                   <option value="No - wish I could.">No - wish I could.</option>
@@ -93,7 +164,7 @@
                             <div class="8u"> 
                               <label>Will you be attending the wedding ceremony &amp; reception on Friday, August 7?</label>
                               <div class="select-wrapper">
-                                <select name="welcome-party"   required>
+                                <select id="ceremony" name="ceremony"   required>
                                   <option value="" disabled selected>Please select your option.</option>
                                   <option value="Yes - can't wait!">Yes - can't wait!</option>
                                   <option value="No - wish I could.">No - wish I could.</option>
@@ -103,9 +174,9 @@
                           </div>
                           <div class="row" >
                             <div class="8u"> 
-                              <label>Please select your entré.</label>
+                              <label>Please select your entree.</label>
                               <div class="select-wrapper">
-                                <select name="welcome-party"   required>
+                                <select id="entree" name="entree"   required>
                                   <option value="" disabled selected>Please select your option.</option>
                                   <option value="Meat">Meat</option>
                                   <option value="Fish">Fish</option>
@@ -115,9 +186,9 @@
                           </div>
                           <div class="row" >
                             <div class="8u"> 
-                              <label>Who will be accompanying you? <i>(Guests must be named on your formal invitation)</i></label>
+                              <label>Who will be accompanying you? <i>(Guests must be named on formal invitation)</i></label>
                               <div class="textarea">
-                                <textarea></textarea>
+                                <textarea id="guests"></textarea>
                               </div>
                             </div>
                           </div>
@@ -125,11 +196,11 @@
                             <div class="8u" style="padding-bottom: 2em"> 
                               <label>Any dietary restrictions for you or anyone else in your party?</label>
                               <div class="textarea">
-                                <textarea></textarea>
+                                <textarea id="dietary"></textarea>
                               </div>
                             </div>
                           </div>
-                          <p class="button"><a href="#" style="color: #ffffff; text-decoration: none">Submit</a></p>
+                          <button class="button" type="button" onclick="submitToAPI(event)" style="color: #ffffff; text-decoration: none">Submit</button>
                         </form>
                       
 					</div>
@@ -150,7 +221,7 @@
 									<h2 style="color: #f8f8f8">Questions?</h2>
                                     <p>Please do not hesitate to reach out to either of us if you have any additional questions or concerns. </p>
           							<ul class="alt" style="color: #f8f8f8">
-										<li><a href="mailto:katecb@gmail.com">Contact us via E-mail</a></li>
+										<li><a href="mailto:contact@kateplusadam.com">Contact us via E-mail</a></li>
 									</ul>
 								</div>
 						    </div>
